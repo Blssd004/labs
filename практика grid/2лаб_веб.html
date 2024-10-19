@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, yellow, #fff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 30px;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .header{
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #222;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 40px;
+        }
+
+        .hero{
+            grid-column: 1 / -1;
+            height: 50px;
+            background: url('https://via.placeholder,com?1400x500') center center/cover no-repeat;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .hero::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100;
+        }
+
+        .hero::h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 4rem;
+            z-index: 1;
+        }
+        
+        .main-content{
+            grid-column: 1 / -1;
+            padding: 40px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-in-out both;
+        }
+
+        .sidebar{
+            grid-column: 9 / -1;
+            padding: 40px;
+            background: linear-gradient(135deg, #6e45e2, #88d3ce);
+            border-radius: 20px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeInRight 1s ease-in-out both;
+        }
+
+        .footer{
+            grid-column: 1  / -1;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+            color: #888;
+            animation: fadeInUp 1s ease-in-out both;
+        }
+        @keyframes fadeInUp {
+            from{
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Адаптивный дизайн на grid</div>
+
+        <div class="hero">
+            <h1>Добро пожаловать!</h1>
+        </div>
+
+
+        <div class="main-content">
+            <div class="content-block">
+                <h2>Адаптивный дизайн</h2>
+                <p>Даанный макет полностью адаптивен и тд</p>
+            </div>
+            <div class="content-block"></div>
+                <h2>Адаптивный дизайн</h2>
+                <p>Даанный макет полностью адаптивен и тд</p>
+            </div>
+            
+            <div class="sidebar">
+                <h2>Контакты</h2>
+                <p>Телефон</p>
+                <p>Email</p>
+            </div>
+
+            <div class="footer">
+                &copy; 2024 Адаптивный дизайн. Все права защищены
+            </div>
+        </div>
+    </div>
+</body>
+</html>

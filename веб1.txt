@@ -1,0 +1,124 @@
+<h1>
+  Заголовок
+</h1>
+<h2>
+  
+ Заголовок 2
+</h2>
+
+<h3>
+  Заголовок 3
+</h3>
+
+<table>
+  <tr>
+    <th>Имя</th>
+    <th>Возраст</th>
+  </tr>
+  <tr>
+    <td>Иван</td>
+    <td>20</td>
+  </tr>
+</table>
+<ul>
+  <li>Хлеб</li>
+  <li>Молоко</li>
+  <li>Мороженое</li>
+</ul>
+<ol>
+  <li>Хлеб</li>
+  <li>Молоко</li>
+  <li>Мороженое</li>
+</ol>
+<img src="https://i.pinimg.com/564x/31/4b/2c/314b2c3d5b47c97c4fcd7ce5978eac64.jpg" alt="Ромашки">
+<img src="https://i.pinimg.com/236x/24/15/21/24152197af38deb718eb730992d441d0.jpg" alt="Розы">
+<img src="https://https://i.pinimg.com/236x/93/ed/3a/93ed3af6411e1e8b997038c74c287a8a.jpg" alt="Розы"><br>
+<b>BBBBBBBBBBBBB</b>
+<strong>Strong</strong><br>
+<i>Cursive</i>
+<em>Emily</em><br>
+<a href="http://lk.stu.lipetsk.ru/">бесполезность</a>
+<a href="https://github.com/">полезность</a>
+<a href="https://vk.com/">вк</a>
+<a href="https://ru.wikipedia.org/wiki/">википедия</a>
+<a href="https://www.ismart.org/library/vsyo-o-bukve-i-zvuke-a">цыусемапинрт</a>
+<blockquote>
+  Не суди не буди @
+</blockquote>
+<blockquote>
+  Не мы такие жизнь такая
+</blockquote>
+<blockquote>
+ А мне пиво важнее судьбы государства
+</blockquote>
+<blockquote>
+  Сколько?
+</blockquote>
+<blockquote>
+  Курва бобер
+</blockquote>
+<b> &lt;a&gt; </b>
+
+_____________________________________________________
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+</head>
+<body>
+  <h1 style="color:red;font-size:100p">
+    Header1
+  </h1>
+  <h2 style="color:rgb(255,117,1)">
+    Header2
+  </h2>
+      
+</body>
+</html>
+
+_____________________________________
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+</head>
+<body>
+  <h1 style="color:red;font-size:100px;font-weight:900">
+    Header1
+  </h1>
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Q49MZKy7_K2Q5I5GdIvu45jgLDmiZ5UCdw&s"><img src="https://i.pinimg.com/564x/84/e4/ff/84e4ffa39464821b6305ab890470cd36.jpg"></a>
+  <h2 style="color:rgb(255,117,1)">
+    Header2
+  </h2>
+  <ol>
+    <li>Jack in the box</li>
+    <li>Shake shack</li>
+    <li>Jack</li>
+  </ol>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Ivan</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Roman</td>
+    </tr>
+  </table>
+  
+      
+</body>
+</html>
+
+
+
+
+
