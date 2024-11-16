@@ -1,77 +1,202 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music App</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Вариант 13</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>Вариант 13</h2>
-            <nav>
+    
+    <div class="sidebar">
+        <div class="navigation_section">
+            <header>
+                <img src="logo.svg" alt="logo">
+                <p>Вариант 13</p>
+            </header>
+            <nav class="navigation">
                 <ul>
-                    <li><a href="#">Домой</a></li>
-                    <li><a href="#">Радио</a></li>
-                    <li><a href="#">Подкасты</a></li>
+                    <li class="nav_item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9 22V12H15V22" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span class="nav_item_name">Домой</span>
+                    </li>
+                    <li class="nav_item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" stroke="#474D56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.24 7.75999C16.7979 8.31723 17.2404 8.97896 17.5424 9.70735C17.8443 10.4357 17.9997 11.2165 17.9997 12.005C17.9997 12.7935 17.8443 13.5742 17.5424 14.3026C17.2404 15.031 16.7979 15.6928 16.24 16.25M7.76 16.24C7.20214 15.6828 6.75959 15.021 6.45764 14.2926C6.1557 13.5642 6.00028 12.7835 6.00028 11.995C6.00028 11.2065 6.1557 10.4257 6.45764 9.69735C6.75959 8.96896 7.20214 8.30723 7.76 7.74999M19.07 4.92999C20.9447 6.80527 21.9979 9.34835 21.9979 12C21.9979 14.6516 20.9447 17.1947 19.07 19.07M4.93 19.07C3.05529 17.1947 2.00214 14.6516 2.00214 12C2.00214 9.34835 3.05529 6.80527 4.93 4.92999" stroke="#474D56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span class="nav_item_name">Радио</span>
+                    </li>
+                    <li class="nav_item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 1C11.2044 1 10.4413 1.31607 9.87868 1.87868C9.31607 2.44129 9 3.20435 9 4V12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12V4C15 3.20435 14.6839 2.44129 14.1213 1.87868C13.5587 1.31607 12.7956 1 12 1Z" stroke="#474D56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M19 10V12C19 13.8565 18.2625 15.637 16.9497 16.9497C15.637 18.2625 13.8565 19 12 19C10.1435 19 8.36301 18.2625 7.05025 16.9497C5.7375 15.637 5 13.8565 5 12V10" stroke="#474D56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 19V23" stroke="#474D56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8 23H16" stroke="#474D56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span class="nav_item_name">Подкасты</span>
+                    </li>
                 </ul>
             </nav>
-            <div class="footer">
-                <p>&copy; Вариант 13<br> Толкачев Иван,<br> группа АИ-22-1</p>
-            </div>
-        </aside>
-        <main class="main-content">
-            <header>
-                <input type="text" placeholder="Поиск">
-            </header>
-            <section class="special-for-you">
-                <h1>Главная</h1>
-                <h2>Специально для вас</h2>
-                <div class="playlist-grid">
-                    <div class="playlist-item gradient-blue">
-                        <span>danceXL</span>
-                        <span>Electronic</span>
-                    </div>
-                    <div class="playlist-item gradient-green">
-                        <span>Rap Life</span>
-                        <span>Rap & Hip-Hop</span>
-                    </div>
-                    <div class="playlist-item gradient-blue-light">
-                        <span>A-List Pop</span>
-                        <span>Pop</span>
-                    </div>
-                    <div class="playlist-item gradient-blue-light">
-                        <span>ALT CTRL</span>
-                        <span>Alternative</span>
-                    </div>
-                    <div class="playlist-item gradient-purple">
-                        <span>Midnight City</span>
-                        <span>Indie</span>
-                    </div>
-                </div>
-            </section>
-            <section class="recently-played">
-                <h2>Недавно прослушанное</h2>
-                <div class="playlist-grid">
-                    <div class="playlist-item gradient-blue">
-                        <span>Favela Boyz</span>
-                    </div>
-                    <div class="playlist-item gradient-green-light">
-                        <span>First Two Pages of...</span>
-                    </div>
-                    <div class="playlist-item gradient-mint">
-                        <span>BOY OH BOY</span>
-                    </div>
-                    <div class="playlist-item gradient-orange">
-                        <span>BUMMER</span>
-                    </div>
-                    <div class="playlist-item gradient-blue-light">
-                        <span>Notes On A Condit...</span>
-                    </div>
-                </div>
-            </section>
-        </main>
+        </div>
+        <footer>
+            <span>
+                © Вариант 13. <br>
+            Толкачев Иван,<br>
+            группа АИ-22-1
+        </span>
+        </footer>
     </div>
+
+    <main>
+        <header>
+            <div class="search">
+                <input type="text" placeholder="Поиск">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="#354153" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M20 20L16 16" stroke="#354153" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+            </div>
+        </header>
+        <main class="card_section">
+            <span class="card_section-title">Главная</span>
+            <div class="section">
+                <p class="section-title">Специально для вас</p>
+                <div class="cards">
+                    <div class="card big" style="background: linear-gradient(152deg, #474775 0%, rgba(94, 94, 211, 0.67) 33.33%, rgba(85, 158, 244, 0.65) 69.01%, #5042aa 100%);">
+                        <div class="card-content">
+                            <button type="button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_102_215)">
+                                      <path d="M19.376 12.416L8.777 19.482C8.70171 19.5321 8.61423 19.5609 8.52389 19.5652C8.43355 19.5695 8.34373 19.5492 8.264 19.5065C8.18427 19.4639 8.1176 19.4003 8.07111 19.3228C8.02462 19.2452 8.00005 19.1564 8 19.066V4.93401C8.00005 4.84356 8.02462 4.75483 8.07111 4.67725C8.1176 4.59967 8.18427 4.53616 8.264 4.49347C8.34373 4.45078 8.43355 4.43051 8.52389 4.43484C8.61423 4.43916 8.70171 4.4679 8.777 4.51801L19.376 11.584C19.4445 11.6297 19.5006 11.6915 19.5395 11.7641C19.5783 11.8367 19.5986 11.9177 19.5986 12C19.5986 12.0823 19.5783 12.1633 19.5395 12.2359C19.5006 12.3085 19.4445 12.3703 19.376 12.416Z" fill="#002F55" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_102_215">
+                                        <rect width="24" height="24" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </button>
+                            <span class="class-info">
+                                <span class="card-title">danceXL</span>
+                                <cpan class="card-text">Electronic</cpan>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card big" style="background: linear-gradient(154deg, #fcd400 0%, rgba(143, 255, 0, 0.69) 31.25%, rgba(46, 200, 108, 0.71) 66.67%, #147563 100%);">
+                        <div class="card-content">
+                            <button type="button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_102_215)">
+                                      <path d="M19.376 12.416L8.777 19.482C8.70171 19.5321 8.61423 19.5609 8.52389 19.5652C8.43355 19.5695 8.34373 19.5492 8.264 19.5065C8.18427 19.4639 8.1176 19.4003 8.07111 19.3228C8.02462 19.2452 8.00005 19.1564 8 19.066V4.93401C8.00005 4.84356 8.02462 4.75483 8.07111 4.67725C8.1176 4.59967 8.18427 4.53616 8.264 4.49347C8.34373 4.45078 8.43355 4.43051 8.52389 4.43484C8.61423 4.43916 8.70171 4.4679 8.777 4.51801L19.376 11.584C19.4445 11.6297 19.5006 11.6915 19.5395 11.7641C19.5783 11.8367 19.5986 11.9177 19.5986 12C19.5986 12.0823 19.5783 12.1633 19.5395 12.2359C19.5006 12.3085 19.4445 12.3703 19.376 12.416Z" fill="#002F55" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_102_215">
+                                        <rect width="24" height="24" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </button>
+                            <span class="class-info">
+                                <span class="card-title">Rap Life</span>
+                                <cpan class="card-text">Rap & Hip-Hop</cpan>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card big" style="background: #0075ff;">
+                        <div class="card-content">
+                            <button type="button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_102_215)">
+                                      <path d="M19.376 12.416L8.777 19.482C8.70171 19.5321 8.61423 19.5609 8.52389 19.5652C8.43355 19.5695 8.34373 19.5492 8.264 19.5065C8.18427 19.4639 8.1176 19.4003 8.07111 19.3228C8.02462 19.2452 8.00005 19.1564 8 19.066V4.93401C8.00005 4.84356 8.02462 4.75483 8.07111 4.67725C8.1176 4.59967 8.18427 4.53616 8.264 4.49347C8.34373 4.45078 8.43355 4.43051 8.52389 4.43484C8.61423 4.43916 8.70171 4.4679 8.777 4.51801L19.376 11.584C19.4445 11.6297 19.5006 11.6915 19.5395 11.7641C19.5783 11.8367 19.5986 11.9177 19.5986 12C19.5986 12.0823 19.5783 12.1633 19.5395 12.2359C19.5006 12.3085 19.4445 12.3703 19.376 12.416Z" fill="#002F55" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_102_215">
+                                        <rect width="24" height="24" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </button>
+                            <span class="class-info">
+                                <span class="card-title">A-List Pop</span>
+                                <cpan class="card-text">Pop</cpan>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-group">
+                        <div class="card small" style="background: linear-gradient(180deg, #9aeeef 0%, #4a7fd5 100%);">
+                            <div class="card-content">
+                                <button type="button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_102_215)">
+                                          <path d="M19.376 12.416L8.777 19.482C8.70171 19.5321 8.61423 19.5609 8.52389 19.5652C8.43355 19.5695 8.34373 19.5492 8.264 19.5065C8.18427 19.4639 8.1176 19.4003 8.07111 19.3228C8.02462 19.2452 8.00005 19.1564 8 19.066V4.93401C8.00005 4.84356 8.02462 4.75483 8.07111 4.67725C8.1176 4.59967 8.18427 4.53616 8.264 4.49347C8.34373 4.45078 8.43355 4.43051 8.52389 4.43484C8.61423 4.43916 8.70171 4.4679 8.777 4.51801L19.376 11.584C19.4445 11.6297 19.5006 11.6915 19.5395 11.7641C19.5783 11.8367 19.5986 11.9177 19.5986 12C19.5986 12.0823 19.5783 12.1633 19.5395 12.2359C19.5006 12.3085 19.4445 12.3703 19.376 12.416Z" fill="#002F55" />
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_102_215">
+                                            <rect width="24" height="24" fill="white" />
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                </button>
+                                <span class="class-info">
+                                    <span class="card-title">danceXL</span>
+                                    <cpan class="card-text">Electronic</cpan>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card small" style="background: linear-gradient(142deg, #281930 0%, rgba(146, 28, 209, 0.69) 30.51%, #7a1cad 100%);">
+                            <div class="card-content">
+                                <button type="button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_102_215)">
+                                          <path d="M19.376 12.416L8.777 19.482C8.70171 19.5321 8.61423 19.5609 8.52389 19.5652C8.43355 19.5695 8.34373 19.5492 8.264 19.5065C8.18427 19.4639 8.1176 19.4003 8.07111 19.3228C8.02462 19.2452 8.00005 19.1564 8 19.066V4.93401C8.00005 4.84356 8.02462 4.75483 8.07111 4.67725C8.1176 4.59967 8.18427 4.53616 8.264 4.49347C8.34373 4.45078 8.43355 4.43051 8.52389 4.43484C8.61423 4.43916 8.70171 4.4679 8.777 4.51801L19.376 11.584C19.4445 11.6297 19.5006 11.6915 19.5395 11.7641C19.5783 11.8367 19.5986 11.9177 19.5986 12C19.5986 12.0823 19.5783 12.1633 19.5395 12.2359C19.5006 12.3085 19.4445 12.3703 19.376 12.416Z" fill="#002F55" />
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_102_215">
+                                            <rect width="24" height="24" fill="white" />
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                </button>
+                                <span class="class-info">
+                                    <span class="card-title">danceXL</span>
+                                    <cpan class="card-text">Electronic</cpan>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="section">
+                <p class="section-title">Недавно просулшанное</p>
+                <div class="cards">
+                    <div class="bottomcard">
+                        <div class="card bottom" style="background: #4F4FFF"></div>
+                        <span class="card-bottom-title">Favela Boyz</span>
+                    </div>
+                    <div class="bottomcard">
+                        <div class="card bottom" style="background: #A5FA62"></div>
+                        <span class="card-bottom-title"> First Two Pages of...</span>
+                    </div>
+                    <div class="bottomcard">
+                        <div class="card bottom" style="background: #56F29E"></div>
+                        <span class="card-bottom-title">BOY OH BOY</span>
+                    </div>
+                    <div class="bottomcard">
+                        <div class="card bottom" style="background: #FD996E"></div>
+                        <span class="card-bottom-title">BUMMER</span>
+                    </div>
+                    <div class="bottomcard">
+                        <div class="card bottom" style="background: #6ABDEB"></div>
+                        <span class="card-bottom-title">Notes On A Condit...</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
 </body>
 </html>
