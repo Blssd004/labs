@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: linear-gradient(180deg, #eda418 47.4%, rgba(237, 164, 24, 0) 100%);
+}
+
+.header__container {
+    width: 1250px;
+    height: 900px;
+    margin: 0 auto;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    align-items: flex-start;
+}
+
+#cart {
+    padding-top: 101px;
+}
+
+.logo {
+    padding-top: 105px;
+    padding-right: 255px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.logo p {
+    padding-top: 8px;
+    font-weight: 900;
+    font-size: 25px;
+    color: #000;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    padding-top: 117px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__list-item a {
+    color: #000;
+}
+
+.main {
+    padding-right: 110px;
+    font-weight: 700;
+    font-size: 25px;
+    color: #000;
+}
+
+.stock {
+    padding-right: 97px;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000;
+}
+
+.about {
+    padding-right: 124px;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000;
+}
+
+.banner {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__desc {
+    padding-top: 173px;
+}
+
+
+.banner__desc-title {
+    font-weight: 800;
+    font-size: 32px;
+    color: #000;
+}
+
+.banner__desc-info {
+    padding-top: 66px;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 48px;
+}
+
+#order {
+    border-radius: 50px;
+    width: 142px;
+    height: 60px;
+    background-color: #e52626;
+    color: #fff;
+    font-size: 24px;
+}
+
+.main__container {
+    width: 1430px;
+    margin: 0 auto;
+    padding-bottom: 47px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 103px 38px;
+}
+
+.menu__item {
+    text-align: center;
+}
+
+.menu__item-name {
+    padding-top: 14px;
+
+    font-weight: 500;
+    font-size: 35px;
+    color: #000;
+}
+
+footer {
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #eda61d 100%);
+}
+
+.footer__container {
+    padding-top: 157px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.useful__links {
+    display: flex;
+    column-gap: 101px;
+    padding-bottom: 45px;
+}
+
+.company__name {
+    padding-bottom: 24px;
+}
+
+.copyright {
+    padding-bottom: 22px;
+}
+
+.social {
+    padding-bottom: 75px;
+    display: flex;
+    align-items: center;
+}
+
+/* Кароче, да, наследование стилей и базовые стили */
+
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Links */
+  
+  a, a:link, a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  /* Common */
+  
+  aside, nav, footer, header, section, main {
+    display: block;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  ul, ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  img, svg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  /* Form */
+  
+  input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+  }
+  
+  input:focus, input:active,
+  button:focus, button:active {
+    outline: none;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  label {
+    cursor: pointer;
+  }
+  
+  legend {
+    display: block;
+  }
